@@ -20,7 +20,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EGF-gd-eHS">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="a7q-yg-xZ7">
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="搜索" id="a7q-yg-xZ7">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -248,12 +248,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="联系人" image="tab_buddy_nor" selectedImage="tab_buddy_press" id="5cc-l7-sci" userLabel="联系人"/>
                     <connections>
+                        <outlet property="searchBar" destination="a7q-yg-xZ7" id="klL-HK-hyE"/>
                         <outlet property="tableView" destination="EGF-gd-eHS" id="ccJ-VN-XxN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFM-3n-cgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="1372"/>
+            <point key="canvasLocation" x="-354" y="1374"/>
         </scene>
         <!--消息-->
         <scene sceneID="NnQ-KC-AAQ">
@@ -270,7 +271,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="0.0" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o1F-HF-5oH">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="qS2-jT-uvm">
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="搜索" id="qS2-jT-uvm">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -314,12 +315,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="938-su-fa7" customClass="LNQQBombButton">
-                                                    <rect key="frame" x="556" y="38" width="30" height="15"/>
+                                                    <rect key="frame" x="566" y="33" width="20" height="20"/>
                                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="15" id="VCc-I5-jaK"/>
+                                                        <constraint firstAttribute="height" constant="20" id="VCc-I5-jaK"/>
+                                                        <constraint firstAttribute="width" constant="20" id="WLU-a1-UJC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <state key="normal" title="1"/>
                                                 </button>
                                             </subviews>
@@ -334,7 +336,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="sfJ-Yx-pyb" secondAttribute="trailing" constant="5" id="PG9-H4-ufm"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="938-su-fa7" secondAttribute="trailing" constant="6" id="UGj-Oo-GFI"/>
                                                 <constraint firstItem="bFv-nB-wE9" firstAttribute="leading" secondItem="LYF-QW-2VN" secondAttribute="trailing" constant="20" id="bKj-qi-2Gq"/>
-                                                <constraint firstItem="938-su-fa7" firstAttribute="top" secondItem="sfJ-Yx-pyb" secondAttribute="bottom" constant="15" id="fcS-7L-fKM"/>
+                                                <constraint firstItem="938-su-fa7" firstAttribute="top" secondItem="sfJ-Yx-pyb" secondAttribute="bottom" constant="10" id="fcS-7L-fKM"/>
                                                 <constraint firstItem="hcR-jF-9gf" firstAttribute="leading" secondItem="LYF-QW-2VN" secondAttribute="trailing" constant="20" id="oNX-7n-SqV"/>
                                                 <constraint firstItem="LYF-QW-2VN" firstAttribute="top" secondItem="6ED-Fi-IHn" secondAttribute="topMargin" id="ubA-iZ-QBJ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="LYF-QW-2VN" secondAttribute="bottom" id="yhL-4W-Gaj"/>
@@ -349,6 +351,7 @@
                                         <connections>
                                             <outlet property="headImage" destination="LYF-QW-2VN" id="bWG-92-UsE"/>
                                             <outlet property="messageLabel" destination="hcR-jF-9gf" id="VYW-cJ-Uzj"/>
+                                            <outlet property="messageNumBtn" destination="938-su-fa7" id="mcc-P5-uM8"/>
                                             <outlet property="nameLabel" destination="bFv-nB-wE9" id="D2j-Np-ca5"/>
                                             <outlet property="timeLabel" destination="sfJ-Yx-pyb" id="rbs-cf-a0d"/>
                                         </connections>
@@ -366,6 +369,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="消息" image="tab_recent_nor" selectedImage="tab_recent_press" id="Ou8-Wm-SJg" userLabel="消息"/>
                     <connections>
+                        <outlet property="messageTabBarItem" destination="Ou8-Wm-SJg" id="J6j-ff-aQ6"/>
+                        <outlet property="searchBar" destination="qS2-jT-uvm" id="rdc-9P-msC"/>
                         <outlet property="tableView" destination="o1F-HF-5oH" id="TOz-eq-Ed5"/>
                     </connections>
                 </viewController>

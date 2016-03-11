@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LNQQBombButton.h"
 
-@class MessageModel,LNQQBombButton;
+@class MessageModel;
 @interface MessageCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

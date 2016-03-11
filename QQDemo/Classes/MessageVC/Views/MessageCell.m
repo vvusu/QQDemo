@@ -10,6 +10,7 @@
 #import "MessageModel.h"
 #import "UIImageView+WebCache.h"
 #import "LNQQBombButton.h"
+#import "UIImage+ImageCrop.h"
 
 @implementation MessageCell
 

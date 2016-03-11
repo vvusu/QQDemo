@@ -44,7 +44,8 @@
     if (!_shapeLayer) {
         _shapeLayer = [CAShapeLayer layer];
         _shapeLayer.fillColor = self.backgroundColor.CGColor;
-        [self.superview.layer insertSublayer:_shapeLayer below:self.layer];
+//        [self.superview.layer insertSublayer:_shapeLayer below:self.layer];
+        [self.rootView.layer addSublayer:_shapeLayer];
     }
     return _shapeLayer;
 }
@@ -53,7 +54,8 @@
     if (!_samllCircleView) {
         _samllCircleView = [[UIView alloc] init];
         _samllCircleView.backgroundColor = self.backgroundColor;
-        [self.superview insertSubview:_samllCircleView belowSubview:self];
+//        [self.superview insertSubview:_samllCircleView belowSubview:self];
+        [self.rootView addSubview:_samllCircleView];
     }
     return _samllCircleView;
 }

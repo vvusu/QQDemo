@@ -163,4 +163,10 @@
     return headView;
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    if (self.CellDidSelectedBlock) {
+        self.CellDidSelectedBlock(CellClickTypeHiddenKeboard,nil);
+    }
+}
+
 @end

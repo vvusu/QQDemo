@@ -16,4 +16,5 @@
 //按钮消失的动画图片组
 @property (nonatomic, strong) NSMutableArray *images;
 
+@property (nonatomic, weak) UIView *rootView;
 @end

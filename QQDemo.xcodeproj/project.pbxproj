@@ -13,6 +13,7 @@
 		AF681CC51C928A55005A99A8 /* LNQQBombButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF681CC41C928A55005A99A8 /* LNQQBombButton.bundle */; };
 		AF681CC81C928AA4005A99A8 /* LNQQBombButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF681CC71C928AA4005A99A8 /* LNQQBombButton.m */; };
 		AF681CCC1C92AE7C005A99A8 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF681CCB1C92AE7C005A99A8 /* MessageCell.m */; };
+		AF681CD21C92C930005A99A8 /* UIImage+ImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = AF681CD11C92C930005A99A8 /* UIImage+ImageCrop.m */; };
 		AFB552451C90395500F5325A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB552441C90395500F5325A /* main.m */; };
 		AFB552481C90395500F5325A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB552471C90395500F5325A /* AppDelegate.m */; };
 		AFB5524E1C90395500F5325A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5524C1C90395500F5325A /* Main.storyboard */; };
@@ -109,6 +110,8 @@
 		AF681CC71C928AA4005A99A8 /* LNQQBombButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNQQBombButton.m; sourceTree = "<group>"; };
 		AF681CCA1C92AE7C005A99A8 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		AF681CCB1C92AE7C005A99A8 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		AF681CD01C92C930005A99A8 /* UIImage+ImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageCrop.h"; sourceTree = "<group>"; };
+		AF681CD11C92C930005A99A8 /* UIImage+ImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageCrop.m"; sourceTree = "<group>"; };
 		AFB552401C90395500F5325A /* QQDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB552441C90395500F5325A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFB552461C90395500F5325A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -617,6 +620,8 @@
 		AFF085301C91515200DC44A8 /* LNUtils */ = {
 			isa = PBXGroup;
 			children = (
+				AF681CD01C92C930005A99A8 /* UIImage+ImageCrop.h */,
+				AF681CD11C92C930005A99A8 /* UIImage+ImageCrop.m */,
 				AF681CC31C928A55005A99A8 /* LNQQBombButton */,
 				AFF085311C91516700DC44A8 /* BaseModel */,
 			);
@@ -799,6 +804,7 @@
 				AFF084B91C910E2000DC44A8 /* AFImageDownloader.m in Sources */,
 				AF681CC81C928AA4005A99A8 /* LNQQBombButton.m in Sources */,
 				AFF084FF1C912E3A00DC44A8 /* UIButton+WebCache.m in Sources */,
+				AF681CD21C92C930005A99A8 /* UIImage+ImageCrop.m in Sources */,
 				AFF084B11C910E2000DC44A8 /* FBEncryptorAES.m in Sources */,
 				AFF084FB1C912E3A00DC44A8 /* SDWebImageDownloader.m in Sources */,
 				AFF084F71C912E3A00DC44A8 /* NSData+ImageContentType.m in Sources */,

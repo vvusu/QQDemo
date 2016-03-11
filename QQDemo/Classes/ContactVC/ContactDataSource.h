@@ -12,7 +12,8 @@
 typedef NS_ENUM(NSInteger, CellClickType) {
     CellClickTypeDevice,
     CellClickTypeAddressBook,
-    CellClickTypeContact
+    CellClickTypeContact,
+    CellClickTypeHiddenKeboard
 };
 
 @class ODRefreshControl;

@@ -73,15 +73,20 @@
         }
         [LNUserCacheManager cachedQQMessageActivity:self.dataArr];
     }
-    [self.tableView reloadData];
+    [self updateData];
     [self.refreshcontrol endRefreshing];
+}
+
+- (void)updateData {
+    self.tabbarItem.badgeValue = [NSString stringWithFormat:@"%lu",(unsigned long)self.dataArr.count];
+    [self.tableView reloadData];
 }
 
 //每10秒添加一条数据到Data
 - (void)addOneMessage {
     NSArray *tempArr = [LNUserCacheManager cachedQQMessage];
     [self.dataArr insertObject:tempArr[arc4random()%tempArr.count] atIndex:0];
-    [self.tableView reloadData];
+    [self updateData];
     [LNUserCacheManager cachedQQMessageActivity:self.dataArr];
 }
 
@@ -114,7 +119,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MessageCell *cell=[tableView dequeueReusableCellWithIdentifier:@"MessageCell"];
+    cell.messageNumBtn.rootView = self.tableView.superview;
     [cell createWithGroupModel:self.dataArr[indexPath.row] index:indexPath];
+    
     return cell;
 }
 
@@ -124,6 +131,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (self.CellDidSelectedBlock) {
+        self.CellDidSelectedBlock(CellClickTypeFriend,nil);
+    }
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    if (self.CellDidSelectedBlock) {
+        self.CellDidSelectedBlock(CellClickTypeHiddenKeboard,nil);
+    }
 }
 
 @end

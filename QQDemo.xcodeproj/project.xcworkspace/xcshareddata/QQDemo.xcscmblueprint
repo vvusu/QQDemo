@@ -1,15 +1,18 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5C760E7A48D1404F2849723CE2DAA1A269843AE8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : 0
+    "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : 0,
+    "5C760E7A48D1404F2849723CE2DAA1A269843AE8" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1E181459-7C89-4CBA-9FDB-7ED69C475ECA",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : "QQDemo\/QQDemo\/Libraries\/LNNetwork\/FBEncryptor\/"
+    "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : "QQDemo\/QQDemo\/Libraries\/LNNetwork\/FBEncryptor\/",
+    "5C760E7A48D1404F2849723CE2DAA1A269843AE8" : "QQDemo\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "QQDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -19,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.20.204:8888\/svn\/%E5%9B%BD%E9%99%85%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wedxz\/QQDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5C760E7A48D1404F2849723CE2DAA1A269843AE8"
     }
   ]
 }

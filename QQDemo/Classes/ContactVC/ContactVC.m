@@ -12,6 +12,7 @@
 
 @interface ContactVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) ContactDataSource *contactDataSource;
 
 @end
@@ -44,7 +45,7 @@
     if (!_contactDataSource) {
         _contactDataSource = [[ContactDataSource alloc]init];
         _contactDataSource.tableView = self.tableView;
-//        __weak typeof(self) wSelf = self;
+        __weak typeof(self) wSelf = self;
         _contactDataSource.CellDidSelectedBlock = ^(CellClickType clickType,id entity){
             switch (clickType) {
                 case CellClickTypeDevice:
@@ -55,6 +56,9 @@
                     break;
                 case CellClickTypeContact:
                     NSLog(@"我的好友被点击");
+                    break;
+                case CellClickTypeHiddenKeboard:
+                    [wSelf.searchBar resignFirstResponder];
                     break;
             }
         };

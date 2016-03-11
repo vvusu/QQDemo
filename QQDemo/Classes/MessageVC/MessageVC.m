@@ -12,6 +12,8 @@
 
 @interface MessageVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITabBarItem *messageTabBarItem;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) UISegmentedControl *segmentControl;
 @property (strong, nonatomic) MessageDataSource *messageDataSource;
 @end
@@ -66,15 +68,20 @@
     if (!_messageDataSource) {
         _messageDataSource = [[MessageDataSource alloc]init];
         _messageDataSource.tableView = self.tableView;
+        _messageDataSource.tabbarItem = self.messageTabBarItem;
         [_messageDataSource loadTestData];
-//        __weak typeof(self) wSelf = self;
+        __weak typeof(self) wSelf = self;
         _messageDataSource.CellDidSelectedBlock = ^(CellClickType clickType,id entity){
             switch (clickType) {
                 case CellClickTypeFriend:
+                    NSLog(@"消息被点击");
                     break;
                 case CellClickTypeGroup:
                     break;
                 case CellClickTypeAD:
+                    break;
+                case CellClickTypeHiddenKeboard:
+                    [wSelf.searchBar resignFirstResponder];
                     break;
             }
         };
