@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1E181459-7C89-4CBA-9FDB-7ED69C475ECA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804" : "QQDemo\/QQDemo\/Libraries\/LNNetwork\/FBEncryptor\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QQDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "QQDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.20.204:8888\/svn\/%E5%9B%BD%E9%99%85%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1325a5f8-b6b3-154a-b414-2f702bd2a734++8804"
+    }
+  ]
+}
