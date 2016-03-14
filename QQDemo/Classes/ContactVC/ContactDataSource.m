@@ -46,8 +46,9 @@
     [self.refreshcontrol beginRefreshing];
     LNRequest *request = [[LNRequest alloc]init];
     request.urlType = kIGetGroupInfo;
+    __weak typeof(self) wSelf = self;
     [LNNetworking getWithRequest:request success:^(LNResponse *response) {
-        [self.refreshcontrol endRefreshing];
+        [wSelf.refreshcontrol endRefreshing];
         if (response.isSucceed) {
             NSArray *groupArr = (NSArray *)response.resultDic;
             NSMutableArray *groupModels = [NSMutableArray array];
@@ -58,8 +59,8 @@
                 [groupModels addObject:groupModel];
             }
             [LNUserCacheManager cachedQQGroupActivity:groupModels];
-            self.dataArr = groupModels;
-            [self.tableView reloadData];
+            wSelf.dataArr = groupModels;
+            [wSelf.tableView reloadData];
         }
     } fail:^(NSError *error) {
         [self.refreshcontrol endRefreshing];

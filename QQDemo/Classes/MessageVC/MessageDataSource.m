@@ -94,8 +94,9 @@
 - (void)doHttpRequest {
     LNRequest *request = [[LNRequest alloc]init];
     request.urlType = kIGetGroupInfo;
+    __weak typeof(self) wSelf = self;
     [LNNetworking getWithRequest:request success:^(LNResponse *response) {
-        [self.refreshcontrol endRefreshing];
+        [wSelf.refreshcontrol endRefreshing];
         if (response.isSucceed) {
             NSArray *groupArr = (NSArray *)response.resultDic;
             NSMutableArray *groupModels = [NSMutableArray array];
@@ -106,7 +107,7 @@
                 [groupModels addObject:groupModel];
             }
             [LNUserCacheManager cachedQQGroupActivity:groupModels];
-            [self loadTestData];
+            [wSelf loadTestData];
         }
     } fail:^(NSError *error) {
     }];
