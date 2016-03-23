@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0B8FF41C9CFFA600BF9EC2 /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B8FED1C9CFFA600BF9EC2 /* AppUtils.m */; };
+		AF0B8FF51C9CFFA600BF9EC2 /* PListUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B8FF01C9CFFA600BF9EC2 /* PListUtils.m */; };
+		AF0B8FF61C9CFFA600BF9EC2 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B8FF31C9CFFA600BF9EC2 /* ViewUtils.m */; };
+		AF0B90031C9D00DF00BF9EC2 /* PointUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B90021C9D00DF00BF9EC2 /* PointUtils.m */; };
+		AF0B900A1C9D056A00BF9EC2 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B90061C9D056A00BF9EC2 /* NSObject+YYModel.m */; };
+		AF0B900B1C9D056A00BF9EC2 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B90081C9D056A00BF9EC2 /* YYClassInfo.m */; };
+		AF0B90121C9D058B00BF9EC2 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B900E1C9D058B00BF9EC2 /* SVIndefiniteAnimatedView.m */; };
+		AF0B90131C9D058B00BF9EC2 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF0B900F1C9D058B00BF9EC2 /* SVProgressHUD.bundle */; };
+		AF0B90141C9D058B00BF9EC2 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B90111C9D058B00BF9EC2 /* SVProgressHUD.m */; };
 		AF681CC01C92693E005A99A8 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF681CBB1C92693E005A99A8 /* ContactCell.m */; };
 		AF681CC11C92693E005A99A8 /* ContactGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF681CBD1C92693E005A99A8 /* ContactGroupView.m */; };
 		AF681CC21C92693E005A99A8 /* ContactHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF681CBF1C92693E005A99A8 /* ContactHeadCell.m */; };
@@ -76,8 +85,6 @@
 		AFF085211C91360900DC44A8 /* LNCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF085201C91360900DC44A8 /* LNCacheManager.m */; };
 		AFF085241C913B8B00DC44A8 /* LNUserCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF085231C913B8B00DC44A8 /* LNUserCacheManager.m */; };
 		AFF085271C913BA400DC44A8 /* LNDefaultCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF085261C913BA400DC44A8 /* LNDefaultCacheManager.m */; };
-		AFF0852E1C913F2100DC44A8 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF0852A1C913F2100DC44A8 /* NSObject+YYModel.m */; };
-		AFF0852F1C913F2100DC44A8 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF0852C1C913F2100DC44A8 /* YYClassInfo.m */; };
 		AFF0853A1C91539700DC44A8 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF085391C91539700DC44A8 /* BaseModel.m */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +106,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0B8FEC1C9CFFA600BF9EC2 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		AF0B8FED1C9CFFA600BF9EC2 /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		AF0B8FEF1C9CFFA600BF9EC2 /* PListUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PListUtils.h; sourceTree = "<group>"; };
+		AF0B8FF01C9CFFA600BF9EC2 /* PListUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PListUtils.m; sourceTree = "<group>"; };
+		AF0B8FF21C9CFFA600BF9EC2 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
+		AF0B8FF31C9CFFA600BF9EC2 /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
+		AF0B90011C9D00DF00BF9EC2 /* PointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointUtils.h; sourceTree = "<group>"; };
+		AF0B90021C9D00DF00BF9EC2 /* PointUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointUtils.m; sourceTree = "<group>"; };
+		AF0B90051C9D056A00BF9EC2 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		AF0B90061C9D056A00BF9EC2 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		AF0B90071C9D056A00BF9EC2 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		AF0B90081C9D056A00BF9EC2 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		AF0B90091C9D056A00BF9EC2 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		AF0B900D1C9D058B00BF9EC2 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		AF0B900E1C9D058B00BF9EC2 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		AF0B900F1C9D058B00BF9EC2 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		AF0B90101C9D058B00BF9EC2 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		AF0B90111C9D058B00BF9EC2 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		AF681CBA1C92693E005A99A8 /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
 		AF681CBB1C92693E005A99A8 /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
 		AF681CBC1C92693E005A99A8 /* ContactGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactGroupView.h; sourceTree = "<group>"; };
@@ -240,11 +265,6 @@
 		AFF085231C913B8B00DC44A8 /* LNUserCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNUserCacheManager.m; sourceTree = "<group>"; };
 		AFF085251C913BA400DC44A8 /* LNDefaultCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNDefaultCacheManager.h; sourceTree = "<group>"; };
 		AFF085261C913BA400DC44A8 /* LNDefaultCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNDefaultCacheManager.m; sourceTree = "<group>"; };
-		AFF085291C913F2100DC44A8 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		AFF0852A1C913F2100DC44A8 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
-		AFF0852B1C913F2100DC44A8 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
-		AFF0852C1C913F2100DC44A8 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
-		AFF0852D1C913F2100DC44A8 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		AFF085381C91539700DC44A8 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		AFF085391C91539700DC44A8 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -275,6 +295,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0B8FEB1C9CFFA600BF9EC2 /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B8FEC1C9CFFA600BF9EC2 /* AppUtils.h */,
+				AF0B8FED1C9CFFA600BF9EC2 /* AppUtils.m */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		AF0B8FEE1C9CFFA600BF9EC2 /* PListUtils */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B8FEF1C9CFFA600BF9EC2 /* PListUtils.h */,
+				AF0B8FF01C9CFFA600BF9EC2 /* PListUtils.m */,
+			);
+			path = PListUtils;
+			sourceTree = "<group>";
+		};
+		AF0B8FF11C9CFFA600BF9EC2 /* ViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B900C1C9D058B00BF9EC2 /* SVProgressHUD */,
+				AF0B8FF21C9CFFA600BF9EC2 /* ViewUtils.h */,
+				AF0B8FF31C9CFFA600BF9EC2 /* ViewUtils.m */,
+			);
+			path = ViewUtils;
+			sourceTree = "<group>";
+		};
+		AF0B90001C9D00C800BF9EC2 /* PointUtils */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B90011C9D00DF00BF9EC2 /* PointUtils.h */,
+				AF0B90021C9D00DF00BF9EC2 /* PointUtils.m */,
+			);
+			path = PointUtils;
+			sourceTree = "<group>";
+		};
+		AF0B90041C9D056A00BF9EC2 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B90051C9D056A00BF9EC2 /* NSObject+YYModel.h */,
+				AF0B90061C9D056A00BF9EC2 /* NSObject+YYModel.m */,
+				AF0B90071C9D056A00BF9EC2 /* YYClassInfo.h */,
+				AF0B90081C9D056A00BF9EC2 /* YYClassInfo.m */,
+				AF0B90091C9D056A00BF9EC2 /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		AF0B900C1C9D058B00BF9EC2 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B900D1C9D058B00BF9EC2 /* SVIndefiniteAnimatedView.h */,
+				AF0B900E1C9D058B00BF9EC2 /* SVIndefiniteAnimatedView.m */,
+				AF0B900F1C9D058B00BF9EC2 /* SVProgressHUD.bundle */,
+				AF0B90101C9D058B00BF9EC2 /* SVProgressHUD.h */,
+				AF0B90111C9D058B00BF9EC2 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		AF681CB91C92693E005A99A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,7 +457,6 @@
 				AFF084781C910E2000DC44A8 /* LNNetwork */,
 				AFF085051C91339500DC44A8 /* LNCache */,
 				AFF085301C91515200DC44A8 /* LNUtils */,
-				AFF085281C913F2100DC44A8 /* YYModel */,
 				AFF084D91C912E3A00DC44A8 /* SDWebImage */,
 				AFB5527B1C90469200F5325A /* ODRefreshControl */,
 			);
@@ -460,6 +540,7 @@
 		AFF084781C910E2000DC44A8 /* LNNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				AFF084961C910E2000DC44A8 /* UIKit+AFNetworking */,
 				AFF084791C910E2000DC44A8 /* AFNetworking */,
 				AFF084871C910E2000DC44A8 /* FBEncryptor */,
 				AFF0848C1C910E2000DC44A8 /* LNEncrypt.h */,
@@ -472,7 +553,6 @@
 				AFF084931C910E2000DC44A8 /* LNRequest.m */,
 				AFF084941C910E2000DC44A8 /* LNResponse.h */,
 				AFF084951C910E2000DC44A8 /* LNResponse.m */,
-				AFF084961C910E2000DC44A8 /* UIKit+AFNetworking */,
 			);
 			path = LNNetwork;
 			sourceTree = "<group>";
@@ -605,21 +685,13 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
-		AFF085281C913F2100DC44A8 /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				AFF085291C913F2100DC44A8 /* NSObject+YYModel.h */,
-				AFF0852A1C913F2100DC44A8 /* NSObject+YYModel.m */,
-				AFF0852B1C913F2100DC44A8 /* YYClassInfo.h */,
-				AFF0852C1C913F2100DC44A8 /* YYClassInfo.m */,
-				AFF0852D1C913F2100DC44A8 /* YYModel.h */,
-			);
-			path = YYModel;
-			sourceTree = "<group>";
-		};
 		AFF085301C91515200DC44A8 /* LNUtils */ = {
 			isa = PBXGroup;
 			children = (
+				AF0B90001C9D00C800BF9EC2 /* PointUtils */,
+				AF0B8FEB1C9CFFA600BF9EC2 /* AppUtils */,
+				AF0B8FEE1C9CFFA600BF9EC2 /* PListUtils */,
+				AF0B8FF11C9CFFA600BF9EC2 /* ViewUtils */,
 				AF681CD01C92C930005A99A8 /* UIImage+ImageCrop.h */,
 				AF681CD11C92C930005A99A8 /* UIImage+ImageCrop.m */,
 				AF681CC31C928A55005A99A8 /* LNQQBombButton */,
@@ -631,6 +703,7 @@
 		AFF085311C91516700DC44A8 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				AF0B90041C9D056A00BF9EC2 /* YYModel */,
 				AFF085381C91539700DC44A8 /* BaseModel.h */,
 				AFF085391C91539700DC44A8 /* BaseModel.m */,
 			);
@@ -740,6 +813,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0B90131C9D058B00BF9EC2 /* SVProgressHUD.bundle in Resources */,
 				AFB552531C90395500F5325A /* LaunchScreen.storyboard in Resources */,
 				AF681CC51C928A55005A99A8 /* LNQQBombButton.bundle in Resources */,
 				AFB552501C90395500F5325A /* Assets.xcassets in Resources */,
@@ -769,16 +843,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF084C31C91128B00DC44A8 /* MessageDataSource.m in Sources */,
-				AFF0852E1C913F2100DC44A8 /* NSObject+YYModel.m in Sources */,
 				AFB5527E1C90469200F5325A /* ODRefreshControl.m in Sources */,
 				AFF084AD1C910E2000DC44A8 /* AFSecurityPolicy.m in Sources */,
 				AFB552481C90395500F5325A /* AppDelegate.m in Sources */,
 				AFF085211C91360900DC44A8 /* LNCacheManager.m in Sources */,
 				AFF084B21C910E2000DC44A8 /* NSData+Base64.m in Sources */,
 				AFF084BA1C910E2000DC44A8 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				AF0B90141C9D058B00BF9EC2 /* SVProgressHUD.m in Sources */,
+				AF0B900B1C9D056A00BF9EC2 /* YYClassInfo.m in Sources */,
 				AFF085241C913B8B00DC44A8 /* LNUserCacheManager.m in Sources */,
 				AFF084C91C911AEC00DC44A8 /* ContactDataSource.m in Sources */,
 				AFC4A03D1C915F240072CDDB /* MessageModel.m in Sources */,
+				AF0B90121C9D058B00BF9EC2 /* SVIndefiniteAnimatedView.m in Sources */,
 				AFF085271C913BA400DC44A8 /* LNDefaultCacheManager.m in Sources */,
 				AFB552901C90491600F5325A /* MessageVC.m in Sources */,
 				AFF084AF1C910E2000DC44A8 /* AFURLResponseSerialization.m in Sources */,
@@ -786,7 +862,9 @@
 				AFF083E51C90816F00DC44A8 /* NewsVC.m in Sources */,
 				AFF084B41C910E2000DC44A8 /* LNNetworkAPI.m in Sources */,
 				AFF085141C91339500DC44A8 /* FMDatabase.m in Sources */,
+				AF0B8FF61C9CFFA600BF9EC2 /* ViewUtils.m in Sources */,
 				AFF084FA1C912E3A00DC44A8 /* SDWebImageDecoder.m in Sources */,
+				AF0B8FF41C9CFFA600BF9EC2 /* AppUtils.m in Sources */,
 				AFB552451C90395500F5325A /* main.m in Sources */,
 				AFF084FD1C912E3A00DC44A8 /* SDWebImageManager.m in Sources */,
 				AFC4A0431C915F4A0072CDDB /* AuthorModel.m in Sources */,
@@ -796,12 +874,12 @@
 				AFF084BE1C910E2000DC44A8 /* UIProgressView+AFNetworking.m in Sources */,
 				AFF084B71C910E2000DC44A8 /* LNResponse.m in Sources */,
 				AFF084F81C912E3A00DC44A8 /* SDImageCache.m in Sources */,
-				AFF0852F1C913F2100DC44A8 /* YYClassInfo.m in Sources */,
 				AF681CC21C92693E005A99A8 /* ContactHeadCell.m in Sources */,
 				AFF084FC1C912E3A00DC44A8 /* SDWebImageDownloaderOperation.m in Sources */,
 				AFF084BF1C910E2000DC44A8 /* UIRefreshControl+AFNetworking.m in Sources */,
 				AFF085031C912E3A00DC44A8 /* UIImageView+WebCache.m in Sources */,
 				AFF084B91C910E2000DC44A8 /* AFImageDownloader.m in Sources */,
+				AF0B8FF51C9CFFA600BF9EC2 /* PListUtils.m in Sources */,
 				AF681CC81C928AA4005A99A8 /* LNQQBombButton.m in Sources */,
 				AFF084FF1C912E3A00DC44A8 /* UIButton+WebCache.m in Sources */,
 				AF681CD21C92C930005A99A8 /* UIImage+ImageCrop.m in Sources */,
@@ -816,6 +894,7 @@
 				AFF085151C91339500DC44A8 /* FMDatabaseAdditions.m in Sources */,
 				AF681CCC1C92AE7C005A99A8 /* MessageCell.m in Sources */,
 				AFF0853A1C91539700DC44A8 /* BaseModel.m in Sources */,
+				AF0B900A1C9D056A00BF9EC2 /* NSObject+YYModel.m in Sources */,
 				AFF084FE1C912E3A00DC44A8 /* SDWebImagePrefetcher.m in Sources */,
 				AFF0851E1C9133DE00DC44A8 /* LNKeyValueStore.m in Sources */,
 				AFF085011C912E3A00DC44A8 /* UIImage+MultiFormat.m in Sources */,
@@ -828,6 +907,7 @@
 				AFF084AC1C910E2000DC44A8 /* AFNetworkReachabilityManager.m in Sources */,
 				AFF084C01C910E2000DC44A8 /* UIWebView+AFNetworking.m in Sources */,
 				AFF085041C912E3A00DC44A8 /* UIView+WebCacheOperation.m in Sources */,
+				AF0B90031C9D00DF00BF9EC2 /* PointUtils.m in Sources */,
 				AF681CC11C92693E005A99A8 /* ContactGroupView.m in Sources */,
 				AF681CC01C92693E005A99A8 /* ContactCell.m in Sources */,
 				AFF084B61C910E2000DC44A8 /* LNRequest.m in Sources */,
