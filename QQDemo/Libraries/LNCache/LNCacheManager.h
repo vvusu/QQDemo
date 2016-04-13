@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const KIUserCacheKey;
+
 @interface LNCacheManager : NSObject
 // 用户表
 + (void)cacheObjectIntoUserTable:(id)object forKey:(NSString *)key;

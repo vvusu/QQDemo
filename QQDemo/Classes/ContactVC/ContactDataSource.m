@@ -14,7 +14,7 @@
 #import "NSObject+YYModel.h"
 #import "ContactGroupView.h"
 #import "LNNetworking.h"
-#import "LNUserCacheManager.h"
+#import "LNCache.h"
 #import "ODRefreshControl.h"
 
 @implementation ContactDataSource
@@ -22,7 +22,7 @@
 - (NSArray *)dataArr {
     if (!_dataArr) {
         _dataArr = [NSArray array];
-        _dataArr = [LNUserCacheManager cachedQQGroup];
+        _dataArr = [LNCache cachedQQGroup];
         [self refreshQQContactWithRequest];
     }
     GroupModel *model1 = [[GroupModel alloc]init];
@@ -58,7 +58,7 @@
                 groupModel.onlineNum = [NSNumber numberWithInteger:groupModel.authors.count];
                 [groupModels addObject:groupModel];
             }
-            [LNUserCacheManager cachedQQGroupActivity:groupModels];
+            [LNCache cachedQQGroupActivity:groupModels];
             wSelf.dataArr = groupModels;
             [wSelf.tableView reloadData];
         }

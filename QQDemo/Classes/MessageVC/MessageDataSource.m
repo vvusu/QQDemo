@@ -9,7 +9,7 @@
 #import "MessageDataSource.h"
 #import "MessageCell.h"
 #import "ODRefreshControl.h"
-#import "LNUserCacheManager.h"
+#import "LNCache.h"
 #import "MessageModel.h"
 //为了测试
 #import "GroupModel.h"
@@ -47,12 +47,12 @@
 }
 
 - (void)loadTestData {
-    NSArray *cacheArr = [LNUserCacheManager cachedQQMessage];
+    NSArray *cacheArr = [LNCache cachedQQMessage];
     if (cacheArr.count != 0) {
         [self.dataArr addObjectsFromArray:cacheArr];
     } else {
         [self.refreshcontrol beginRefreshing];
-        NSArray *tempArr = [LNUserCacheManager cachedQQGroup];
+        NSArray *tempArr = [LNCache cachedQQGroup];
         if (tempArr.count == 0) {
             [self doHttpRequest];
         } else {
@@ -71,7 +71,7 @@
                 [self.dataArr addObject:messageModel];
             }
         }
-        [LNUserCacheManager cachedQQMessageActivity:self.dataArr];
+        [LNCache cachedQQMessageActivity:self.dataArr];
     }
     [self updateData];
     [self.refreshcontrol endRefreshing];
@@ -84,10 +84,10 @@
 
 //每10秒添加一条数据到Data
 - (void)addOneMessage {
-    NSArray *tempArr = [LNUserCacheManager cachedQQMessage];
+    NSArray *tempArr = [LNCache cachedQQMessage];
     [self.dataArr insertObject:tempArr[arc4random()%tempArr.count] atIndex:0];
     [self updateData];
-    [LNUserCacheManager cachedQQMessageActivity:self.dataArr];
+    [LNCache cachedQQMessageActivity:self.dataArr];
 }
 
 //请求接口联系人的接口 暂时
@@ -106,7 +106,7 @@
                 groupModel.onlineNum = [NSNumber numberWithInteger:groupModel.authors.count];
                 [groupModels addObject:groupModel];
             }
-            [LNUserCacheManager cachedQQGroupActivity:groupModels];
+            [LNCache cachedQQGroupActivity:groupModels];
             [wSelf loadTestData];
         }
     } fail:^(NSError *error) {
