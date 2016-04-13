@@ -17,8 +17,22 @@
 
 @implementation LNQQBombButton
 /** 绘制不规则图形 */
+- (instancetype)init {
+    if (self = [super init]) {
+        [self setUp];
+    }
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        [self setUp];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
         [self setUp];
     }
     return self;
@@ -44,8 +58,7 @@
     if (!_shapeLayer) {
         _shapeLayer = [CAShapeLayer layer];
         _shapeLayer.fillColor = self.backgroundColor.CGColor;
-//        [self.superview.layer insertSublayer:_shapeLayer below:self.layer];
-        [self.rootView.layer addSublayer:_shapeLayer];
+        [self.superview.layer insertSublayer:_shapeLayer below:self.layer];
     }
     return _shapeLayer;
 }
@@ -54,8 +67,7 @@
     if (!_samllCircleView) {
         _samllCircleView = [[UIView alloc] init];
         _samllCircleView.backgroundColor = self.backgroundColor;
-//        [self.superview insertSubview:_samllCircleView belowSubview:self];
-        [self.rootView addSubview:_samllCircleView];
+        [self.superview insertSubview:_samllCircleView belowSubview:self];
     }
     return _samllCircleView;
 }

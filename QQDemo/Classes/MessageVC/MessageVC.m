@@ -8,7 +8,7 @@
 
 #import "MessageVC.h"
 #import "MessageDataSource.h"
-#import "LNUserCacheManager.h"
+#import "LNCache.h"
 
 @interface MessageVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

@@ -4,9 +4,11 @@
 //
 //  Created by vvusu on 3/9/16.
 //  Copyright © 2016 vvusu. All rights reserved.
-//
+//  WL
 
 #import "AppDelegate.h"
+#import "LNCache.h"
+#import "User.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,11 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Override point for customization after application launch.LL
+    User *user = [[User alloc]init];
+    user.uid = @"1111111";
+    [LNCache cacheUser:user];
     return YES;
 }
 
