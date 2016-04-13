@@ -8,8 +8,11 @@
 
 #import "LNCacheManager.h"
 #import "LNKeyValueStore.h"
+#import "User.h"
 
 @implementation LNCacheManager
+
+NSString *const KIUserCacheKey = @"kIUserActivity";
 static NSString *const kCachedDBName = @"cache.db";
 static NSString *const kDataBaseDefaultTableName = @"table_kRDefault";
 
@@ -18,8 +21,9 @@ static NSString *kCachedUserTableName;
 static NSString *kCachedDefaultTableName;
 
 + (LNKeyValueStore *)sharedUserStore {
-    NSString *un = @"QQUserUID";
-    if (un.length < 3) {
+    User *user = [self cachedObjectFromDefaultTableForKey:KIUserCacheKey];
+    NSString *un = user.uid;
+    if (un.length == 0) {
         return nil;
     }
     NSString *newTableName = [NSString stringWithFormat:@"table_%@",un];
